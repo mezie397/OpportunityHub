@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: Arial, sans-serif;
+background: #f5f8ff;
+color: #172554;
+line-height: 1.6;
+}
+
+header {
+background: #ffffff;
+padding: 22px 8%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+}
+
+header h1 {
+color: #2563eb;
+font-size: 26px;
+font-weight: bold;
+}
+
+nav a {
+color: #172554;
+text-decoration: none;
+margin-left: 22px;
+font-weight: 600;
+}
+
+.hero {
+text-align: center;
+padding: 85px 20px;
+background: #eaf1ff;
+}
+
+.hero h2 {
+font-size: 40px;
+color: #2563eb;
+margin-bottom: 15px;
+}
+
+.hero p {
+color: #64748b;
+font-size: 17px;
+margin-bottom: 30px;
+}
+
+.search-box {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 12px;
+flex-wrap: wrap;
+max-width: 900px;
+margin: 30px auto 0;
+padding: 20px;
+background: #ffffff;
+border-radius: 12px;
+box-shadow: 0 4px 15px rgba(37,99,235,0.08);
+}
+
+.search-box select {
+width: 260px;
+max-width: 100%;
+padding: 14px;
+border: 1px solid #dbe4f0;
+border-radius: 7px;
+background: #ffffff;
+font-size: 15px;
+}
+
+.search-box button {
+padding: 14px 28px;
+background: #2563eb;
+color: #ffffff;
+border: none;
+border-radius: 7px;
+font-size: 15px;
+font-weight: bold;
+cursor: pointer;
+}
+
+.search-box button:hover {
+background: #1d4ed8;
+}
+
+section {
+padding: 65px 8%;
+text-align: center;
+}
+
+section h2 {
+color: #172554;
+font-size: 30px;
+margin-bottom: 25px;
+}
+
+.categories {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+gap: 22px;
+margin-top: 30px;
+}
+
+.card {
+background: #ffffff;
+padding: 35px 20px;
+border-radius: 12px;
+box-shadow: 0 4px 15px rgba(37,99,235,0.07);
+border: 1px solid #e5edff;
+color: #172554;
+font-weight: bold;
+transition: 0.3s;
+}
+
+.card:hover {
+transform: translateY(-5px);
+box-shadow: 0 8px 20px rgba(37,99,235,0.12);
+}
+
+#about {
+background: #ffffff;
+}
+
+#about p {
+max-width: 750px;
+margin: auto;
+color: #64748b;
+}
+
+footer {
+background: #172554;
+color: #ffffff;
+text-align: center;
+padding: 25px;
+}
+
+@media (max-width: 600px) {
+header {
+flex-direction: column;
+gap: 12px;
+}
+
+nav a {
+    margin: 0 8px;
+}
+.hero {
+    padding: 60px 18px;
+}
+.hero h2 {
+    font-size: 29px;
+}
+.search-box {
+    flex-direction: column;
+}
+.search-box select,
+.search-box button {
+    width: 100%;
+}
+section {
+    padding: 50px 20px;
+}
+grid-template-columns: repeat(2, 1fr);minmax(220px, 1fr));
+}
+
+.category-container {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 20px;
+width: 100%;
+max-width: 850px;
+margin: 30px auto;
+}
+
+.category-card {
+display: block;
+background: #ffffff;
+padding: 30px 20px;
+border: 1px solid #dbeafe;
+border-radius: 14px;
+box-shadow: 0 4px 15px rgba(37, 99, 235, 0.10);
+text-align: center;
+min-height: 150px;
+}
+
+.category-card h3 {
+color: #2563eb;
+font-size: 19px;
+margin-bottom: 12px;
+}
+
+.category-card p {
+color: #64748b;
+font-size: 14px;
+line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+.category-container {
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 12px;
+}
+
+.category-card {
+    padding: 20px 10px;
+}
+.category-card h3 {
+    font-size: 16px;
+}
+
+}
+.category-card p {
+    font-weight: bold;
+}
+.featured {
+    background: #f5f8ff;
+}
+
+.featured-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    max-width: 850px;
+    width: 100%;
+    margin: 30px auto;
+}
+
+.opportunity-card {
+    background: #ffffff;
+    padding: 25px 20px;
+    border: 1px solid #dbeafe;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.10);
+    text-align: center;
+}
+
+.opportunity-card h3 {
+    color: #2563eb;
+    margin-bottom: 12px;
+}
+
+.opportunity-card p {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.opportunity-card span {
+    display: inline-block;
+    margin-top: 15px;
+    color: #2563eb;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .featured-container {
+        gap: 12px;
+    }
+
+    .opportunity-card {
+        padding: 20px 10px;
+    }
+}
+.opportunity-list {
+    max-width: 850px;
+    margin: 35px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: left;
+}
+
+.listing-card {
+    background: #ffffff;
+    padding: 25px;
+    border-left: 5px solid #2563eb;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+}
+
+.listing-type {
+    display: inline-block;
+    color: #2563eb;
+    background: #eff6ff;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.listing-card h3 {
+    color: #172554;
+    margin: 12px 0;
+    font-size: 19px;
+}
+
+.listing-card p {
+    color: #64748b;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.listing-card button {
+    margin-top: 15px;
+    padding: 11px 20px;
+    background: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.listing-card button:hover {
+    background: #1d4ed8;
+}
+.view-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 11px 20px;
+    background: #2563eb;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.view-button:hover {
+    background: #1d4ed8;
+}
+@media (max-width: 600px) {
+    .listing-card {
+        padding: 20px 15px;
+    }
+}
+.opportunity-details {
+    background: #ffffff;
+    max-width: 850px;
+    margin: 50px auto;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.08);
+    text-align: left;
+}
+
+.opportunity-details h2 {
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+.opportunity-details h3 {
+    color: #172554;
+    margin: 22px 0 10px;
+}
+
+.opportunity-details p,
+.opportunity-details li {
+    color: #64748b;
+    line-height: 1.8;
+}
+
+.opportunity-details ul {
+    padding-left: 22px;
+}
+
+@media (max-width: 600px) {
+    .opportunity-details {
+        margin: 30px 12px;
+        padding: 22px 16px;
+    }
+}
