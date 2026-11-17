@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpportunityHub | Discover Your Future</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <h1>OpportunityHub</h1>
+
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#categories">Opportunities</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Discover Opportunities.<br>Build Your Future.</h2>
+
+    <p>
+        Find scholarships, jobs, internships and free courses
+        from anywhere in the world.
+    </p>
+
+    <div class="search-box">
+
+    <select id="opportunityType">
+        <option value="">Select opportunity type</option>
+        <option value="scholarships">Scholarships</option>
+        <option value="jobs">Jobs</option>
+        <option value="internships">Internships</option>
+        <option value="courses">Free Courses</option>
+    </select>
+
+    <select id="country">
+      <option value="">Select country</option>
+<option value="worldwide">Worldwide</option>
+<option value="afghanistan">Afghanistan</option>
+<option value="albania">Albania</option>
+<option value="algeria">Algeria</option>
+<option value="andorra">Andorra</option>
+<option value="angola">Angola</option>
+<option value="antigua-and-barbuda">Antigua and Barbuda</option>
+<option value="argentina">Argentina</option>
+<option value="armenia">Armenia</option>
+<option value="australia">Australia</option>
+<option value="austria">Austria</option>
+<option value="azerbaijan">Azerbaijan</option>
+<option value="bahamas">Bahamas</option>
+<option value="bahrain">Bahrain</option>
+<option value="bangladesh">Bangladesh</option>
+<option value="barbados">Barbados</option>
+<option value="belarus">Belarus</option>
+<option value="belgium">Belgium</option>
+<option value="belize">Belize</option>
+<option value="benin">Benin</option>
+<option value="bhutan">Bhutan</option>
+<option value="bolivia">Bolivia</option>
+<option value="bosnia-and-herzegovina">Bosnia and Herzegovina</option>
+<option value="botswana">Botswana</option>
+<option value="brazil">Brazil</option>
+<option value="brunei">Brunei</option>
+<option value="bulgaria">Bulgaria</option>
+<option value="burkina-faso">Burkina Faso</option>
+<option value="burundi">Burundi</option>
+<option value="cabo-verde">Cabo Verde</option>
+<option value="cambodia">Cambodia</option>
+<option value="cameroon">Cameroon</option>
+<option value="canada">Canada</option>
+<option value="central-african-republic">Central African Republic</option>
+<option value="chad">Chad</option>
+<option value="chile">Chile</option>
+<option value="china">China</option>
+<option value="colombia">Colombia</option>
+<option value="comoros">Comoros</option>
+<option value="congo">Congo</option>
+<option value="costa-rica">Costa Rica</option>
+<option value="croatia">Croatia</option>
+<option value="cuba">Cuba</option>
+<option value="cyprus">Cyprus</option>
+<option value="czechia">Czechia</option>
+<option value="denmark">Denmark</option>
+<option value="djibouti">Djibouti</option>
+<option value="dominica">Dominica</option>
+<option value="dominican-republic">Dominican Republic</option>
+<option value="dr-congo">Democratic Republic of the Congo</option>
+<option value="ecuador">Ecuador</option>
+<option value="egypt">Egypt</option>
+<option value="el-salvador">El Salvador</option>
+<option value="equatorial-guinea">Equatorial Guinea</option>
+<option value="eritrea">Eritrea</option>
+<option value="estonia">Estonia</option>
+<option value="eswatini">Eswatini</option>
+<option value="ethiopia">Ethiopia</option>
+<option value="fiji">Fiji</option>
+<option value="finland">Finland</option>
+<option value="france">France</option>
+<option value="gabon">Gabon</option>
+<option value="gambia">Gambia</option>
+<option value="georgia">Georgia</option>
+<option value="germany">Germany</option>
+<option value="ghana">Ghana</option>
+<option value="greece">Greece</option>
+<option value="grenada">Grenada</option>
+<option value="guatemala">Guatemala</option>
+<option value="guinea">Guinea</option>
+<option value="guinea-bissau">Guinea-Bissau</option>
+<option value="guyana">Guyana</option>
+<option value="haiti">Haiti</option>
+<option value="honduras">Honduras</option>
+<option value="hungary">Hungary</option>
+<option value="iceland">Iceland</option>
+<option value="india">India</option>
+<option value="indonesia">Indonesia</option>
+<option value="iran">Iran</option>
+<option value="iraq">Iraq</option>
+<option value="ireland">Ireland</option>
+<option value="israel">Israel</option>
+<option value="italy">Italy</option>
+<option value="jamaica">Jamaica</option>
+<option value="japan">Japan</option>
+<option value="jordan">Jordan</option>
+<option value="kazakhstan">Kazakhstan</option>
+<option value="kenya">Kenya</option>
+<option value="kiribati">Kiribati</option>
+<option value="kuwait">Kuwait</option>
+<option value="kyrgyzstan">Kyrgyzstan</option>
+<option value="laos">Laos</option>
+<option value="latvia">Latvia</option>
+<option value="lebanon">Lebanon</option>
+<option value="lesotho">Lesotho</option>
+<option value="liberia">Liberia</option>
+<option value="libya">Libya</option>
+<option value="liechtenstein">Liechtenstein</option>
+<option value="lithuania">Lithuania</option>
+<option value="luxembourg">Luxembourg</option>
+<option value="madagascar">Madagascar</option>
+<option value="malawi">Malawi</option>
+<option value="malaysia">Malaysia</option>
+<option value="maldives">Maldives</option>
+<option value="mali">Mali</option>
+<option value="malta">Malta</option>
+<option value="marshall-islands">Marshall Islands</option>
+<option value="mauritania">Mauritania</option>
+<option value="mauritius">Mauritius</option>
+<option value="mexico">Mexico</option>
+<option value="micronesia">Micronesia</option>
+<option value="moldova">Moldova</option>
+<option value="monaco">Monaco</option>
+<option value="mongolia">Mongolia</option>
+<option value="montenegro">Montenegro</option>
+<option value="morocco">Morocco</option>
+<option value="mozambique">Mozambique</option>
+<option value="myanmar">Myanmar</option>
+<option value="namibia">Namibia</option>
+<option value="nauru">Nauru</option>
+<option value="nepal">Nepal</option>
+<option value="netherlands">Netherlands</option>
+<option value="new-zealand">New Zealand</option>
+<option value="nicaragua">Nicaragua</option>
+<option value="niger">Niger</option>
+<option value="nigeria">Nigeria</option>
+<option value="north-korea">North Korea</option>
+<option value="north-macedonia">North Macedonia</option>
+<option value="norway">Norway</option>
+<option value="oman">Oman</option>
+<option value="pakistan">Pakistan</option>
+<option value="palau">Palau</option>
+<option value="palestine">Palestine</option>
+<option value="panama">Panama</option>
+<option value="papua-new-guinea">Papua New Guinea</option>
+<option value="paraguay">Paraguay</option>
+<option value="peru">Peru</option>
+<option value="philippines">Philippines</option>
+<option value="poland">Poland</option>
+<option value="portugal">Portugal</option>
+<option value="qatar">Qatar</option>
+<option value="romania">Romania</option>
+<option value="russia">Russia</option>
+<option value="rwanda">Rwanda</option>
+<option value="saint-kitts-and-nevis">Saint Kitts and Nevis</option>
+<option value="saint-lucia">Saint Lucia</option>
+<option value="saint-vincent-and-the-grenadines">Saint Vincent and the Grenadines</option>
+<option value="samoa">Samoa</option>
+<option value="san-marino">San Marino</option>
+<option value="sao-tome-and-principe">São Tomé and Príncipe</option>
+<option value="saudi-arabia">Saudi Arabia</option>
+<option value="senegal">Senegal</option>
+<option value="serbia">Serbia</option>
+<option value="seychelles">Seychelles</option>
+<option value="sierra-leone">Sierra Leone</option>
+<option value="singapore">Singapore</option>
+<option value="slovakia">Slovakia</option>
+<option value="slovenia">Slovenia</option>
+<option value="solomon-islands">Solomon Islands</option>
+<option value="somalia">Somalia</option>
+<option value="south-africa">South Africa</option>
+<option value="south-korea">South Korea</option>
+<option value="south-sudan">South Sudan</option>
+<option value="spain">Spain</option>
+<option value="sri-lanka">Sri Lanka</option>
+<option value="sudan">Sudan</option>
+<option value="suriname">Suriname</option>
+<option value="sweden">Sweden</option>
+<option value="switzerland">Switzerland</option>
+<option value="syria">Syria</option>
+<option value="tajikistan">Tajikistan</option>
+<option value="tanzania">Tanzania</option>
+<option value="thailand">Thailand</option>
+<option value="timor-leste">Timor-Leste</option>
+<option value="togo">Togo</option>
+<option value="tonga">Tonga</option>
+<option value="trinidad-and-tobago">Trinidad and Tobago</option>
+<option value="tunisia">Tunisia</option>
+<option value="turkey">Türkiye</option>
+<option value="turkmenistan">Turkmenistan</option>
+<option value="tuvalu">Tuvalu</option>
+<option value="uganda">Uganda</option>
+<option value="ukraine">Ukraine</option>
+<option value="united-arab-emirates">United Arab Emirates</option>
+<option value="uk">United Kingdom</option>
+<option value="usa">United States</option>
+<option value="uruguay">Uruguay</option>
+<option value="uzbekistan">Uzbekistan</option>
+<option value="vanuatu">Vanuatu</option>
+<option value="vatican-city">Vatican City</option>
+<option value="venezuela">Venezuela</option>
+<option value="vietnam">Vietnam</option>
+<option value="yemen">Yemen</option>
+<option value="zambia">Zambia</option>
+<option value="zimbabwe">Zimbabwe</option>
+    <option value="">Select country</option>
+</select>
+
+    <button id="searchButton">Search</button>
+</div>
+</section>
+<section class="categories" id="categories">
+    <h2>Explore Opportunities</h2>
+
+    <div class="category-container">
+
+    <div class="category-card">
+        <h3>🎓 Scholarships</h3>
+        <p>Find funding opportunities to support your education and achieve your academic dreams.</p>
+    </div>
+
+    <div class="category-card">
+        <h3>💼 Jobs</h3>
+        <p>Discover exciting career opportunities locally and around the world.</p>
+    </div>
+
+    <div class="category-card">
+        <h3>🚀 Internships</h3>
+        <p>Gain practical experience, develop your skills and build your career.</p>
+    </div>
+
+    <div class="category-card">
+        <h3>📚 Free Courses</h3>
+        <p>Learn new skills and expand your knowledge through free online courses.</p>
+    </div>
+
+</div>
+</section>
+    <section class="featured">
+    <h2>Featured Opportunities</h2>
+    <p>Explore opportunities that can help you build your future.</p>
+
+    <div class="opportunity-list">
+
+        <div class="listing-card">
+            <span class="listing-type">SCHOLARSHIP</span>
+            <h3>International Scholarship Programme</h3>
+            <p>📍 Canada</p>
+            <p>📅 Deadline: To be announced</p>
+            <a href="#scholarship-details" class="view-button">View Opportunity</a>
+        </div>
+
+        <div class="listing-card">
+            <span class="listing-type">REMOTE JOB</span>
+            <h3>Remote Career Opportunities</h3>
+            <p>📍 Worldwide</p>
+            <p>📅 Check application details</p>
+            <a href="#job-details" class="view-button">View Opportunity</a>
+        </div>
+
+        <div class="listing-card">
+            <span class="listing-type">INTERNSHIP</span>
+            <h3>International Internship Programme</h3>
+            <p>📍 United Kingdom</p>
+            <p>📅 Deadline: To be announced</p>
+          <a href="#internship-details" class="view-button">View Opportunity</a>
+        </div>
+<div class="listing-card">
+    <span class="listing-type">FREE COURSE</span>
+    <h3>Online Learning Opportunities</h3>
+    <p>📍 Worldwide</p>
+    <p>📅 Enrolment: Check course details</p>
+    <a href="#course-details" class="view-button">View Opportunity</a>
+</div>
+    </div>
+</section>
+<section class="opportunity-details" id="scholarship-details">
+
+    <h2>International Scholarship Programme</h2>
+
+    <span class="listing-type">SCHOLARSHIP</span>
+
+    <p><strong>Country:</strong> Canada</p>
+
+    <h3>About this Opportunity</h3>
+    <p>
+        This sample scholarship listing represents an opportunity
+        for students seeking financial support for their education.
+    </p>
+
+    <h3>Eligibility Requirements</h3>
+    <ul>
+        <li>Applicants must meet the programme's admission requirements.</li>
+        <li>Applicants must provide the required documents.</li>
+        <li>Applicants must meet the official eligibility criteria.</li>
+    </ul>
+
+    <h3>Application Deadline</h3>
+    <p>To be announced.</p>
+
+    <h3>How to Apply</h3>
+  <a href="https://example.com" target="_blank" class="view-button">
+    Apply Now
+</a>
+    <p>Visit the official scholarship website for application instructions.</p>
+
+</section>
+  <section class="opportunity-details" id="job-details">
+
+    <h2>Remote Career Opportunities</h2>
+
+    <span class="listing-type">REMOTE JOB</span>
+
+    <p><strong>Location:</strong> Worldwide</p>
+
+    <h3>About this Opportunity</h3>
+    <p>
+        Explore remote career opportunities that allow you
+        to work with organisations from different parts
+        of the world.
+    </p>
+
+    <h3>Requirements</h3>
+    <ul>
+        <li>Relevant skills for the advertised position.</li>
+        <li>Good communication skills.</li>
+        <li>Ability to work remotely.</li>
+    </ul>
+
+    <h3>Application Details</h3>
+    <p>Check the official job advertisement for requirements and deadlines.</p>
+
+    <h3>How to Apply</h3>
+    <p>Visit the employer's official application website.</p>
+
+    <a href="https://example.com" target="_blank" class="view-button">
+        Apply Now
+    </a>
+
+</section>
+  <section class="opportunity-details" id="internship-details">
+
+    <h2>International Internship Programme</h2>
+
+    <span class="listing-type">INTERNSHIP</span>
+
+    <p><strong>Location:</strong> United Kingdom</p>
+
+    <h3>About this Opportunity</h3>
+    <p>
+        Explore internship opportunities designed to help
+        students and graduates gain practical experience
+        and develop professional skills.
+    </p>
+
+    <h3>Requirements</h3>
+    <ul>
+        <li>Interest in the selected career field.</li>
+        <li>Good communication skills.</li>
+        <li>Willingness to learn and develop new skills.</li>
+    </ul>
+
+    <h3>Application Deadline</h3>
+    <p>To be announced.</p>
+
+    <h3>How to Apply</h3>
+    <p>Visit the official internship website for application instructions.</p>
+
+    <a href="https://example.com" target="_blank" class="view-button">
+        Apply Now
+    </a>
+
+</section>
+  <section class="opportunity-details" id="course-details">
+
+    <h2>Online Learning Opportunities</h2>
+
+    <span class="listing-type">FREE COURSE</span>
+
+    <p><strong>Location:</strong> Worldwide</p>
+
+    <h3>About this Opportunity</h3>
+    <p>
+        Discover free online courses that help you develop
+        valuable skills, gain knowledge and improve your career.
+    </p>
+
+    <h3>Requirements</h3>
+    <ul>
+        <li>Interest in learning new skills.</li>
+        <li>Access to an internet connection.</li>
+        <li>Willingness to complete the course.</li>
+    </ul>
+
+    <h3>Course Duration</h3>
+    <p>Depends on the selected course.</p>
+
+    <h3>How to Enrol</h3>
+    <p>Visit the official course provider's website.</p>
+
+    <a href="https://example.com" target="_blank" class="view-button">
+        Enrol Now
+    </a>
+
+</section>
+<section class="about" id="about">
+    <h2>About OpportunityHub</h2>
+    <p>
+        Our mission is to connect people with opportunities
+        that help them learn, grow and succeed.
+    </p>
+</section>
+
+<footer id="contact">
+    <h3>OpportunityHub</h3>
+    <p>Your future starts with an opportunity.</p>
+    <p>© 2026 OpportunityHub. All rights reserved.</p>
+</footer>
+</body>
+</html>
